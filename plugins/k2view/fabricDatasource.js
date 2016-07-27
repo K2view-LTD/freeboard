@@ -89,6 +89,9 @@ var fabricDatasource = function (settings, updateCallback) {
 			},
 			error: function (xhr, status, error) {
 				$('.modal-content-mymodal p').text(xhr.responseText); 
+				//make the modal appear in the middle of the html
+				var leftPos = $( document ).width()/2 - $("#myModal").width()/2;
+				$("#myModal").css('left', leftPos);
 				$( '#myModal' ).fadeIn();
 				//empty DS widgets/Gauges
 				updateCallback({"results":[]});
