@@ -18,7 +18,7 @@ $.ajax({
 
 
 freeboard.loadDatasourcePlugin({
-	type_name: "Fabric DS",
+	type_name: "InfoHub DS",
 	settings: [    
 	           {
              	  "name": "luName",
